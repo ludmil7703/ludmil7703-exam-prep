@@ -33,7 +33,7 @@ jobs:
     - name: Echo name
       run: echo "Ludmil Iordanov"
     - name: Deploy to production
-      uses: johnbeynon/deploy-to-render@v0.0.0
+      uses: ludmil7703-exam-prep/deploy-to-render@v0.0.8
       with:
         service-id: ${{ secrets.SERVICE_ID }}
         api-key: ${{ secrets.API_KEY }}
