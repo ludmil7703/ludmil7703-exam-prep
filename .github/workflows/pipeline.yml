@@ -30,7 +30,6 @@ jobs:
     - run: npm run test:unit
 
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     steps:
      -name: Deploy to Heroku
