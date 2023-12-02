@@ -34,7 +34,6 @@ jobs:
     needs: build
     steps:
      - name: Deploy to Heroku
-        uses: actions/checkout@v2
         uses: akhileshns/heroku-deploy@v3.12.13 # This is the action
         with:
           api-key: ${{ secrets.API_KEY }}
