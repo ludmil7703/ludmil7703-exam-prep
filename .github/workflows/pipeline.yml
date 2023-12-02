@@ -37,3 +37,4 @@ jobs:
       with:
         service-id: ${{ secrets.SERVICE_ID }}
         api-key: ${{ secrets.API_KEY }}
+        deployHookURL: ${{ secrets.DEPLOY_HOOK_URL }}
