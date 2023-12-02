@@ -27,7 +27,7 @@ jobs:
       run: echo "My username is ludmil7703"
 
     -name: Deploy to Heroku
-      uses: ludmil7703/heroku-deploy@v3.12.12
+      uses: johnbeynon/render-deploy-action@v0.0.8
       with:
-        api_key: ${{ secrets.API_KEY }}
+        api-key: ${{ secrets.API_KEY }}
         service-id: ${{ secrets.SERVICE_ID }}
