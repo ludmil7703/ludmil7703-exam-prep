@@ -30,7 +30,7 @@ jobs:
     - run: npm run test:unit
 
     -name: Deploy to Heroku
-      uses: superFly/flyctl-actions@1.3
+      uses: actions/flyctl-actions@1.3
       with:
         api-key: ${{ secrets.API_KEY }}
         service-id: ${{ secrets.SERVICE_ID }}
