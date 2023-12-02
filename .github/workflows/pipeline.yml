@@ -26,12 +26,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
-    - run: npm run test:unit
-    - run: echo "Ludmil Iordanov"
-
+    - name: NPM install
+      run: npm install
+    - name: Run tests
+      run: npm run test:unit
+    - name: Echo name
+      run: echo "Ludmil Iordanov"
     - name: Deploy to production
-      uses: bankfliptech/deploy-to-render@v1
+      uses: johnbeynon/deploy-to-render@v0.0.0
       with:
-       service-id: ${{ secrets.SERVICE_ID }}
-       api-key: ${{ secrets.API_KEY }}
+        service-id: ${{ secrets.SERVICE_ID }}
+        api-key: ${{ secrets.API_KEY }}
